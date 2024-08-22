@@ -1,0 +1,91 @@
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .user-table th, .user-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .user-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .update-btn, .edit-btn, .delete-btn, .comments-btn, .todos-btn {
+    margin-right: 5px;
+  }
+  
+  .update-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .edit-btn {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .comments-btn, .todos-btn {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .user-photo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .comments-popup, .todos-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 80%;
+    max-height: 70%;
+    overflow-y: auto;
+  }
+  
+  .comments-popup .close-btn, .todos-popup .close-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .comments-popup h3, .todos-popup h3 {
+    margin-top: 0;
+  }
+  
+  .comments-container, .todos-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-box, .todo-box {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  

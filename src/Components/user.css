@@ -1,0 +1,110 @@
+.list{
+display: flex;
+width: 600px;
+justify-content: space-between;
+margin: 5px;
+margin-left: 30%;
+
+
+
+}
+/* user.css */
+.user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-photo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  .user-details {
+    flex-grow: 1;
+  }
+  
+  .user-details h3 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .user-details p {
+    margin: 5px 0 0;
+    color: #6c757d;
+  }
+  
+  .user-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .edit-btn, .delete-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .comments-toggle {
+    margin-top: 15px;
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comments-toggle:hover {
+    background-color: #117a8b;
+  }
+  
+  @media (max-width: 600px) {
+    .user-card {
+      max-width: 100%;
+    }
+  
+    .user-info {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .user-photo {
+      margin-bottom: 15px;
+    }
+  }
+  
